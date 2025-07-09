@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Protection</title>
+    <style type="text/css">
+         .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 5px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      margin: 4px 2px;
+      cursor: pointer;
+      margin:10px;
+    }
+    .box{
+      padding: 5px 20px;
+      float: right;
+    }
+    .form{
+      padding:50px; 
+      width:30%;
+    }
+    .div{
+      font-size: 20px;
+      border-color: blue;
+      padding:100px;
+    }
+    label{
+      float:left;
+    }
+    </style>
+  </head>
+  <body id="page">
+    <div align="center">
+      <h3>Data Protection</h3>
+    <form id="form" class="form">
+    <label>Application Data</label><input id="data" class="box" type="text" name="data"><br><br>
+    <input type="button" name="Store" value="Store" class="button" id="store"><br><br>
+    <label>Attacker View(Encrypted)</label><input id="edata"  class="box" type="text" name="data"><br><br>
+    <input type="button" name="Retrieve" value="Retrieve"  class="button" id="retrieve"><br><br>
+    <label>Actual Data</label><input id="rdata" class="box" type="text" name="rdata">
+    </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+

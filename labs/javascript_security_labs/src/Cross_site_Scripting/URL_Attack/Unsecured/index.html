@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testing Page</title>
+    <style>
+    .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.box{
+  padding: 5px 20px;
+}
+.form{
+  padding:50px; 
+}
+  </style>
+  </head>
+  <body id="page">
+    <div align="center">
+      <h1>File Explorer</h1>
+    <form id="form1" class="form" method="POST" onsubmit="printValue();return false;">
+    <label>File Url:</label><input id="url" class="box" type="text" name="url"><br><br><input type="button" class="button" name="search" value="search" id="search">
+    </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cross Site Scripting</title>
+    <style>
+    .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.box{
+  padding: 5px 20px;
+}
+.form{
+  padding:50px; 
+}
+.div{
+  font-size: 20px;
+  border-color: blue;
+  padding:100px;
+}
+  </style>
+  </head>
+  <body id="page">
+    <div align="center">
+      <h3>Comment Here</h3>
+    <form id="form1" class="form" method="POST" onsubmit="printValue();return false;">
+    <label>Comment:</label><textarea class="box" id="comment" name="comment"></textarea><br><br>
+	  <input class="button" type="submit">
+    </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
