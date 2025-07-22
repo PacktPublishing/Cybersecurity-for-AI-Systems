@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prompt Engineering Playground</title>
+</head>
+<body>
+    <h1>Prompt Engineering Interface</h1>
+    <form method="post">
+        <textarea name="prompt" rows="10" cols="80" placeholder="Enter your prompt here..."></textarea><br>
+        <input type="submit" value="Submit Prompt">
+    </form>
+    {% if result %}
+        <h3>Completion:</h3>
+        <pre>{{ result }}</pre>
+    {% endif %}
+</body>
+</html>
