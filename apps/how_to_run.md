@@ -5,7 +5,9 @@
      source myenv/bin/activate
      ```
      
-2. **Start Jupyter Notebook**
+3. Run `python app.py`
+   And Open your browser here: http://127.0.0.1:5000/
+4. If the lab is for Jupyter Notebook, **Start Jupyter Notebook**
    - Start Jupyter Notebook with the command:
      ```sh
      jupyter lab         
@@ -20,6 +22,4 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 export OPENAI_API_KEY=your-key
-python app.py
-
 ```
